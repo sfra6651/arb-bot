@@ -1,62 +1,110 @@
 [
   {
-    "id": "Highlanders Blues",
+    "id": "Highlanders.Blues",
     "odds": [
-      "4.60",
+      "13.00",
       "21.00",
-      "1.18"
+      "1.01"
     ]
   },
   {
-    "id": "Rebels Force",
+    "id": "Rebels.Force",
     "odds": [
-      "1.52",
+      "1.45",
       "18.00",
-      "2.60"
+      "2.80"
     ]
   },
   {
-    "id": "Moana Pasifika Fijian Drua",
+    "id": "Moana Pasifika.Fijian Drua",
     "odds": [
-      "2.80",
+      "2.50",
       "21.00",
-      "1.42"
+      "1.52"
     ]
   },
   {
-    "id": "Crusaders Waratahs",
+    "id": "Crusaders.Waratahs",
     "odds": [
-      "1.10",
+      "1.09",
       "26.00",
       "7.00"
     ]
   },
   {
-    "id": "Edinburgh Ospreys",
+    "id": "Chiefs Manawa.Hurricanes Poua",
     "odds": [
-      "1.20",
-      "18.00",
-      "4.60"
-    ]
-  },
-  {
-    "id": "Munster Zebre",
-    "odds": [
-      "1.01",
+      "1.04",
       "31.00",
-      "15.00"
+      "9.00"
     ]
   },
   {
-    "id": "Chiefs Brumbies",
+    "id": "Matau.Blues Women",
     "odds": [
-      "1.37",
+      "1.62",
       "18.00",
-      "3.20"
+      "2.25"
     ]
   },
   {
-    "id": "Hurricanes Reds",
+    "id": "Fiji.Great Britain",
+    "odds": [
+      "1.09",
+      "21.00",
+      "7.25"
+    ]
+  },
+  {
+    "id": "France.Canada",
+    "odds": [
+      "1.05",
+      "26.00",
+      "9.00"
+    ]
+  },
+  {
+    "id": "Ireland.South Africa",
+    "odds": [
+      "3.00",
+      "12.00",
+      "1.44"
+    ]
+  },
+  {
+    "id": "Argentina.Spain",
+    "odds": [
+      "1.005",
+      "41.00",
+      "16.00"
+    ]
+  },
+  {
+    "id": "New Zealand.Australia",
+    "odds": [
+      "1.26",
+      "14.00",
+      "4.00"
+    ]
+  },
+  {
+    "id": "USA.Samoa",
+    "odds": [
+      "1.27",
+      "14.00",
+      "4.00"
+    ]
+  },
+  {
+    "id": "Chiefs.Brumbies",
+    "odds": [
+      "1.35",
+      "18.00",
+      "3.30"
+    ]
+  },
+  {
+    "id": "Hurricanes.Reds",
     "odds": [
       "1.30",
       "21.00",
@@ -64,7 +112,7 @@
     ]
   },
   {
-    "id": "Toulouse Castres",
+    "id": "Toulouse.Castres",
     "odds": [
       "1.12",
       "21.00",
@@ -72,15 +120,15 @@
     ]
   },
   {
-    "id": "Bayonne Lyon",
+    "id": "Bayonne.Lyon",
     "odds": [
-      "1.33",
+      "1.35",
       "18.00",
-      "3.30"
+      "3.20"
     ]
   },
   {
-    "id": "Oyonnax Montpellier",
+    "id": "Oyonnax.Montpellier",
     "odds": [
       "1.72",
       "18.00",
@@ -88,23 +136,23 @@
     ]
   },
   {
-    "id": "Stade Francais Pau",
+    "id": "Stade Francais.Pau",
     "odds": [
-      "1.20",
+      "1.17",
       "18.00",
-      "4.60"
+      "5.00"
     ]
   },
   {
-    "id": "Toulon Perpignan",
+    "id": "Toulon.Perpignan",
     "odds": [
-      "1.13",
+      "1.14",
       "21.00",
-      "5.75"
+      "5.50"
     ]
   },
   {
-    "id": "Bordeaux Racing 92",
+    "id": "Bordeaux.Racing 92",
     "odds": [
       "1.27",
       "18.00",
@@ -112,47 +160,15 @@
     ]
   },
   {
-    "id": "Lions Sharks",
+    "id": "Kobe Steel.Toyota Verblitz",
     "odds": [
-      "1.62",
+      "1.60",
       "16.00",
-      "2.35"
+      "2.40"
     ]
   },
   {
-    "id": "Benetton Rugby Glasgow Warriors",
-    "odds": [
-      "2.20",
-      "18.00",
-      "1.67"
-    ]
-  },
-  {
-    "id": "Bulls Stormers",
-    "odds": [
-      "1.37",
-      "18.00",
-      "3.10"
-    ]
-  },
-  {
-    "id": "Connacht Scarlets",
-    "odds": [
-      "1.04",
-      "26.00",
-      "10.00"
-    ]
-  },
-  {
-    "id": "Cardiff Rugby Leinster",
-    "odds": [
-      "6.00",
-      "21.00",
-      "1.12"
-    ]
-  },
-  {
-    "id": "Ulster Dragons",
+    "id": "Spears Kubota.Mitsubishi Dynaboars",
     "odds": [
       "1.02",
       "26.00",
@@ -160,11 +176,35 @@
     ]
   },
   {
-    "id": "La Rochelle Clermont",
+    "id": "La Rochelle.Clermont",
     "odds": [
-      "1.20",
+      "1.18",
       "18.00",
-      "4.50"
+      "4.80"
+    ]
+  },
+  {
+    "id": "Italy.Scotland",
+    "odds": [
+      "5.25",
+      "26.00",
+      "1.16"
+    ]
+  },
+  {
+    "id": "England.Ireland",
+    "odds": [
+      "5.25",
+      "26.00",
+      "1.16"
+    ]
+  },
+  {
+    "id": "Wales.France",
+    "odds": [
+      "3.60",
+      "18.00",
+      "1.33"
     ]
   }
 ]

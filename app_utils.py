@@ -8,7 +8,7 @@ from main import *
 
 def stl_card(row, row_num):
     odds_total = float(row['best_team1_odds']) + float(row['best_team2_odds'])
-    teams = row['match'].split(' ')
+    teams = row['match'].split('.')
     team1, team2 = teams[0], teams[1]
     colour = ":green"
     if row['%_profit'] < 1:
@@ -22,12 +22,18 @@ def stl_card(row, row_num):
     #input and profit display
     col1, col2 = st.columns(2)
     with col1:
-        stake = st.number_input('Stake', key=row_num, placeholder='Set stake...', value=None, label_visibility='collapsed')
+        stake = st.number_input('Stake', key=row_num, placeholder='Set stake...', value=100, label_visibility='collapsed')
+        real_bet_options = real_bets([row['team1_implied_odds'], row['team2_implied_odds']], [row['best_team1_odds'], row['best_team2_odds']], stake)
+        option = st.selectbox('Real bet options', real_bet_options, key=f"opt{row_num}")
     with col2:
         if stake:
             st.subheader(f"Profit: $:green[{round(stake * row['%_profit']/100,2)}]")
         else:
             st.subheader(f"Profit: $:green[{0.0}]")
+        st.write("")
+        st.subheader(f"Real returns: \$:green[{max(option)* min([row['best_team1_odds'], row['best_team2_odds']])}]  \$:green[{min(option)* max([row['best_team1_odds'], row['best_team2_odds']])}]")
+                    #   $:green[{max(option)* min([row['team1_implied_odds'], row['team2_implied_odds']])}] 
+                    #   $:green[{min(option)* max([row['team1_implied_odds'], row['team2_implied_odds']])}]")
 
     # arbitrage opportunity info
     first, second, third, forth = st.columns([1, 1, 1, 1])

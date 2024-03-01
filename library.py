@@ -102,7 +102,7 @@ def implied_odds(row):
 #this is to avoid possible account suspension
 #start at 5,5 then incement the value at the index of the smallest implied probability - Switch to incrementing the other
 # when the ration of this value to the total is greater than the implied prob of likely outcome
-def real_bets(implied_probs, odds):
+def real_bets(implied_probs, odds, max_stake):
     # get the max idex of the max prob for the algo later on
     if implied_probs[0] > implied_probs[1]:
         max_index = 0
@@ -114,7 +114,7 @@ def real_bets(implied_probs, odds):
     stakes = [5,5]
     winning_stakes = []
     opp = False
-    while(sum(stakes) < 150 ):
+    while(sum(stakes) < max_stake ):
         total = sum(stakes)
         payout_max = stakes[max_index] * odds[min_index]
         payout_min = stakes[min_index] * odds[max_index]

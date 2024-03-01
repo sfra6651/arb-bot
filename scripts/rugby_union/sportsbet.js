@@ -48,7 +48,7 @@ async function rodds(card) {
   var finalOdds = [];
   for (var i = 0; i < odds.length; i += 3) {
     finalOdds.push({
-      id: `${odds[i].team} ${odds[i + 2].team}`,
+      id: `${odds[i].team}.${odds[i + 2].team}`,
       odds: [odds[i].odds, odds[i + 1].odds, odds[i + 2].odds],
     });
   }

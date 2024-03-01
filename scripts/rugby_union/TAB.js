@@ -12,7 +12,7 @@ async function rugby_odds(element) {
 
   // console.log(h, a);
 
-  const id = `${h} ${a}`;
+  const id = `${h}.${a}`;
   const oddsElements = await element.$$(".button--outcome__price");
   const odds0 = await oddsElements[0].evaluate((el) => el.textContent);
   const odds1 = await oddsElements[1].evaluate((el) => el.textContent);
@@ -51,8 +51,12 @@ async function rugby_odds(element) {
   var rugbyOdds = [];
 
   for (const element of data) {
-    const json = await rugby_odds(element);
-    rugbyOdds.push(json);
+    try {
+      const json = await rugby_odds(element);
+      rugbyOdds.push(json);
+    } catch (err) {
+      continue;
+    }
   }
 
   const jsonString = JSON.stringify(rugbyOdds, null, 2);

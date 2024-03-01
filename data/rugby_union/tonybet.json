@@ -1,0 +1,578 @@
+[
+  {
+    "id": "Manly Sea Eagles.South Sydney Rabbitohs",
+    "odds": [
+      "2.12",
+      "23",
+      "1.8"
+    ]
+  },
+  {
+    "id": "Sydney Roosters.Brisbane Broncos",
+    "odds": [
+      "2.47",
+      "21",
+      "1.62"
+    ]
+  },
+  {
+    "id": "Newcastle Knights.Canberra Raiders",
+    "odds": [
+      "1.39",
+      "22",
+      "3.15"
+    ]
+  },
+  {
+    "id": "New Zealand Warriors.Cronulla-Sutherland Sharks",
+    "odds": [
+      "1.57",
+      "20",
+      "2.55"
+    ]
+  },
+  {
+    "id": "Melbourne Storm.Penrith Panthers",
+    "odds": [
+      "2.17",
+      "22",
+      "1.74"
+    ]
+  },
+  {
+    "id": "Parramatta Eels.Canterbury-Bankstown Bulldogs",
+    "odds": [
+      "1.44",
+      "21",
+      "2.95"
+    ]
+  },
+  {
+    "id": "Gold Coast Titans.St George Illawarra Dragons",
+    "odds": [
+      "1.5",
+      "21",
+      "2.7"
+    ]
+  },
+  {
+    "id": "Dolphins (Nrl).North Queensland Cowboys",
+    "odds": [
+      "2.85",
+      "22",
+      "1.46"
+    ]
+  },
+  {
+    "id": "Warrington Wolves.Castleford Tigers",
+    "odds": [
+      "1.16",
+      "28",
+      "5.6"
+    ]
+  },
+  {
+    "id": "Wigan Warriors.Huddersfield Giants",
+    "odds": [
+      "1.15",
+      "25",
+      "5.8"
+    ]
+  },
+  {
+    "id": "St Helens.Leigh Leopards",
+    "odds": [
+      "1.13",
+      "27",
+      "6.2"
+    ]
+  },
+  {
+    "id": "Leeds Rhinos.Catalans Dragons",
+    "odds": [
+      "1.91",
+      "21",
+      "1.97"
+    ]
+  },
+  {
+    "id": "Salford Red Devils.Hull Kingston Rovers",
+    "odds": [
+      "3.05",
+      "20",
+      "1.43"
+    ]
+  },
+  {
+    "id": "Hull FC.London Broncos",
+    "odds": [
+      "1.25",
+      "26",
+      "4"
+    ]
+  },
+  {
+    "id": "Rebels.Western Force",
+    "odds": [
+      "1.45",
+      "27",
+      "2.85"
+    ]
+  },
+  {
+    "id": "Moana Pasifika.Fijian Drua",
+    "odds": [
+      "3",
+      "27",
+      "1.41"
+    ]
+  },
+  {
+    "id": "Crusaders.Waratahs",
+    "odds": [
+      "1.08",
+      "40",
+      "7.6"
+    ]
+  },
+  {
+    "id": "Chiefs.Brumbies",
+    "odds": [
+      "1.35",
+      "26",
+      "3.35"
+    ]
+  },
+  {
+    "id": "Hurricanes.Reds",
+    "odds": [
+      "1.33",
+      "26",
+      "3.45"
+    ]
+  },
+  {
+    "id": "Edinburgh Rugby.Ospreys",
+    "odds": [
+      "1.22",
+      "26",
+      "4.4"
+    ]
+  },
+  {
+    "id": "Munster.Zebre",
+    "odds": [
+      "1.01",
+      "50",
+      "14"
+    ]
+  },
+  {
+    "id": "Lions.The Sharks",
+    "odds": [
+      "1.61",
+      "22",
+      "2.42"
+    ]
+  },
+  {
+    "id": "Benetton Treviso.Glasgow Warriors",
+    "odds": [
+      "2.08",
+      "20",
+      "1.82"
+    ]
+  },
+  {
+    "id": "Bulls.Stormers",
+    "odds": [
+      "1.39",
+      "23",
+      "3.15"
+    ]
+  },
+  {
+    "id": "Connacht Rugby.Scarlets",
+    "odds": [
+      "1.05",
+      "40",
+      "9.8"
+    ]
+  },
+  {
+    "id": "Ulster Rugby.Dragons",
+    "odds": [
+      "1.02",
+      "45",
+      "12"
+    ]
+  },
+  {
+    "id": "Cardiff Rugby.Leinster",
+    "odds": [
+      "6.2",
+      "30",
+      "1.13"
+    ]
+  },
+  {
+    "id": "Stade Toulousain.Castres Olympique",
+    "odds": [
+      "1.15",
+      "30",
+      "6"
+    ]
+  },
+  {
+    "id": "Stade Francais Paris.Section Paloise",
+    "odds": [
+      "1.19",
+      "28",
+      "5.2"
+    ]
+  },
+  {
+    "id": "US Oyonnax.Montpellier Herault Rugby",
+    "odds": [
+      "1.78",
+      "23",
+      "2.16"
+    ]
+  },
+  {
+    "id": "RC Toulonnais.USA Perpignan",
+    "odds": [
+      "1.1",
+      "35",
+      "7.4"
+    ]
+  },
+  {
+    "id": "Aviron Bayonne.Lyon Ou",
+    "odds": [
+      "1.37",
+      "23",
+      "3.4"
+    ]
+  },
+  {
+    "id": "Union Bordeaux Begles.Racing 92",
+    "odds": [
+      "1.27",
+      "25",
+      "4.1"
+    ]
+  },
+  {
+    "id": "Stade Rochelais.Asm Clermont Auvergne",
+    "odds": [
+      "1.19",
+      "26",
+      "4.9"
+    ]
+  },
+  {
+    "id": "Italy.Scotland",
+    "odds": [
+      "5.6",
+      "28",
+      "1.16"
+    ]
+  },
+  {
+    "id": "England.Ireland",
+    "odds": [
+      "5.6",
+      "28",
+      "1.15"
+    ]
+  },
+  {
+    "id": "Wales.France",
+    "odds": [
+      "3.45",
+      "22",
+      "1.34"
+    ]
+  },
+  {
+    "id": "Ireland.Scotland",
+    "odds": [
+      "1.11",
+      "30",
+      "6.8"
+    ]
+  },
+  {
+    "id": "Harlequins FC.Glasgow Warriors",
+    "odds": [
+      "1.32",
+      "22",
+      "3.45"
+    ]
+  },
+  {
+    "id": "Bulls.Lyon Ou",
+    "odds": [
+      "1.1",
+      "30",
+      "6.6"
+    ]
+  },
+  {
+    "id": "Exeter RC Chiefs.Bath Rugby",
+    "odds": [
+      "2.15",
+      "22",
+      "1.73"
+    ]
+  },
+  {
+    "id": "Stormers.Stade Rochelais",
+    "odds": [
+      "2.15",
+      "22",
+      "1.73"
+    ]
+  },
+  {
+    "id": "Union Bordeaux Begles.Saracens FC",
+    "odds": [
+      "1.2",
+      "25",
+      "4.6"
+    ]
+  },
+  {
+    "id": "Leinster.Leicester Tigers",
+    "odds": [
+      "1.07",
+      "35",
+      "8"
+    ]
+  },
+  {
+    "id": "Northampton Saints.Munster",
+    "odds": [
+      "1.36",
+      "22",
+      "3.25"
+    ]
+  },
+  {
+    "id": "Stade Toulousain.Racing 92",
+    "odds": [
+      "1.15",
+      "28",
+      "5.6"
+    ]
+  },
+  {
+    "id": "Stade Aurillacois.Uson Nevers",
+    "odds": [
+      "1.39",
+      "21",
+      "3"
+    ]
+  },
+  {
+    "id": "Stade Montois Rugby.Soyaux Angouleme",
+    "odds": [
+      "1.08",
+      "30",
+      "7"
+    ]
+  },
+  {
+    "id": "FC Grenoble Rugby.Rouen Normandy",
+    "odds": [
+      "1.09",
+      "35",
+      "6.6"
+    ]
+  },
+  {
+    "id": "Provence Rugby.Colomiers Rugby",
+    "odds": [
+      "1.19",
+      "26",
+      "4.5"
+    ]
+  },
+  {
+    "id": "US Montalbanaise.SU Agen",
+    "odds": [
+      "1.47",
+      "21",
+      "2.7"
+    ]
+  },
+  {
+    "id": "Valence Romans Drome.US Dax",
+    "odds": [
+      "1.29",
+      "23",
+      "3.55"
+    ]
+  },
+  {
+    "id": "Biarritz Olympique.Rugby Club Vannes",
+    "odds": [
+      "1.65",
+      "22",
+      "2.23"
+    ]
+  },
+  {
+    "id": "Mie Honda Heat.Yokohama Canon Eagles",
+    "odds": [
+      "12",
+      "50",
+      "1.005"
+    ]
+  },
+  {
+    "id": "Hanazono Kintetsu Liners.Toshiba Brave Lupus Tokyo",
+    "odds": [
+      "13",
+      "40",
+      "1.002"
+    ]
+  },
+  {
+    "id": "Shizuoka Blue Revs.Saitama Wild Knights",
+    "odds": [
+      "4.5",
+      "30",
+      "1.18"
+    ]
+  },
+  {
+    "id": "Tokyo Sungoliath.Black Rams Tokyo",
+    "odds": [
+      "1.03",
+      "40",
+      "10"
+    ]
+  },
+  {
+    "id": "Kubota Spears Funabashi Tokyo Bay.Mitsubishi Sagamihara Dynaboars",
+    "odds": [
+      "1.03",
+      "40",
+      "9.6"
+    ]
+  },
+  {
+    "id": "Kobelco Kobe Steelers.Toyota Verblitz",
+    "odds": [
+      "1.6",
+      "22",
+      "2.34"
+    ]
+  },
+  {
+    "id": "Fiji.Great Britain",
+    "odds": [
+      "1.11",
+      "28",
+      "6.8"
+    ]
+  },
+  {
+    "id": "France.Canada",
+    "odds": [
+      "1.07",
+      "35",
+      "9"
+    ]
+  },
+  {
+    "id": "Ireland.South Africa",
+    "odds": [
+      "3",
+      "16",
+      "1.47"
+    ]
+  },
+  {
+    "id": "Argentina.Spain",
+    "odds": [
+      "1.02",
+      "45",
+      "13"
+    ]
+  },
+  {
+    "id": "New Zealand.Australia",
+    "odds": [
+      "1.29",
+      "20",
+      "3.95"
+    ]
+  },
+  {
+    "id": "USA.Samoa",
+    "odds": [
+      "1.29",
+      "19",
+      "3.9"
+    ]
+  },
+  {
+    "id": "Australia.Ireland",
+    "odds": [
+      "1.1",
+      "28",
+      "7.4"
+    ]
+  },
+  {
+    "id": "France.Japan",
+    "odds": [
+      "1.02",
+      "29",
+      "17"
+    ]
+  },
+  {
+    "id": "Fiji.Brazil",
+    "odds": [
+      "1.1",
+      "28",
+      "7.4"
+    ]
+  },
+  {
+    "id": "New Zealand.South Africa",
+    "odds": [
+      "1.002",
+      "101",
+      "14"
+    ]
+  },
+  {
+    "id": "Canada.Great Britain",
+    "odds": [
+      "1.42",
+      "16",
+      "3.2"
+    ]
+  },
+  {
+    "id": "USA.Spain",
+    "odds": [
+      "1.04",
+      "45",
+      "11"
+    ]
+  },
+  {
+    "id": "Highlanders.Blues",
+    "odds": [
+      "12",
+      "45",
+      "1.02"
+    ]
+  }
+]

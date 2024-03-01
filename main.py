@@ -20,8 +20,8 @@ def get_arbs():
     df = pd.DataFrame({'match': match_names})
 
     for d, name in zip(data, bookie_names):
-        team1_dict = {x['id']: x['odds'][0] for x in d}
-        team2_dict = {x['id']: x['odds'][2] for x in d}
+        team1_dict = {x['id']: x['odds'][0] for x in d if len(x['odds']) > 2}
+        team2_dict = {x['id']: x['odds'][2] for x in d if len(x['odds']) > 2}
 
         team1 = [team1_dict.get(match) for match in match_names]
         team2 = [team2_dict.get(match) for match in match_names]
@@ -34,8 +34,17 @@ def get_arbs():
     
     mask = best_odds['%_profit'] != 0
     best_odds = best_odds[mask]
-    # best_odds[['team1_implied_odds', 'team2_implied_odds']] = best_odds.apply(lambda row: implied_odds(row), axis=1, result_type='expand')
+    best_odds[['team1_implied_odds', 'team2_implied_odds']] = best_odds.apply(lambda row: implied_odds(row), axis=1, result_type='expand')
+
+    best_odds['best_team1_odds'] = best_odds['best_team1_odds'].astype(float)
+    best_odds['best_team2_odds'] = best_odds['best_team2_odds'].astype(float)
+
     return best_odds
+
+#!!!!RUN ALL SCRIPTS AND DELETE PREVIOUS DATA!!!!
+# paths = get_file_paths('scripts/rugby_union')
+# clean_path('data/rugby_union')
+# run_js_scripts(paths)
 
 print(get_arbs())
 
