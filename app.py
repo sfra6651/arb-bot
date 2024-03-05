@@ -1,3 +1,5 @@
+import time
+
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -13,26 +15,40 @@ def temp_results():
     duplicated_df = pd.concat([duplicated_df, duplicated_df], ignore_index=True)
     return duplicated_df
 
-if "show_arbs" not in st.session_state:
-    st.session_state.show_arbs = False
+if __name__ == '__main__':
 
-st.set_page_config(layout="wide")
-left_margin, main_content, right_margin = st.columns([1, 4, 1])
+    st.set_page_config(layout="wide")
 
-with main_content:
-    st.title("Arb finder")
-    if st.button('Show Arbs'):
-        st.session_state.show_arbs = True
+    if "show_arbs" not in st.session_state:
+        st.session_state.show_arbs = False
 
-if st.session_state.show_arbs:
+    if "data_loaded" not in st.session_state:
+        st.session_state.data_loaded = False
+
+    left_margin, main_content, right_margin = st.columns([1, 4, 1])
+
     with main_content:
-        if "results" not in st.session_state:
-            st.session_state.results = temp_results()
+        st.title("Arbitrage finder")
+        event_type = st.selectbox('Event type', ["rugby union", "esports"], placeholder="Choose an event type...", index=None)
 
-        row_num = 0
+        if event_type and not st.session_state.data_loaded:
+            progress_bar("pipetest.py")
+            st.session_state.data_loaded = True
 
-        st.write(get_arbs())
-        for _, row in st.session_state.results.iterrows():
-            stl_card(row, row_num)
-            row_num += 1
+        if st.session_state.data_loaded:
+            if st.button('Show Arbitrage opportunities'):
+                    st.session_state.show_arbs = True
+
+    if st.session_state.show_arbs and st.session_state.data_loaded:
+        with main_content:
+
+            if "results" not in st.session_state:
+                st.session_state.results = temp_results()
+
+            row_num = 0
+
+            st.write(get_arbs())
+            for _, row in st.session_state.results.iterrows():
+                stl_card(row, row_num)
+                row_num += 1
 

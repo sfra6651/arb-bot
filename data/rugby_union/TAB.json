@@ -1,210 +1,86 @@
 [
   {
-    "id": "Highlanders.Blues",
-    "odds": [
-      "13.00",
-      "21.00",
-      "1.01"
-    ]
+    "id": "Moana Pasifika.Rebels",
+    "odds": ["2.35", "16.00", "1.62"]
   },
   {
-    "id": "Rebels.Force",
-    "odds": [
-      "1.45",
-      "18.00",
-      "2.80"
-    ]
+    "id": "Waratahs.Highlanders",
+    "odds": ["1.70", "15.00", "2.25"]
   },
   {
-    "id": "Moana Pasifika.Fijian Drua",
-    "odds": [
-      "2.50",
-      "21.00",
-      "1.52"
-    ]
+    "id": "Fijian Drua.Crusaders",
+    "odds": ["2.70", "18.00", "1.47"]
   },
   {
-    "id": "Crusaders.Waratahs",
-    "odds": [
-      "1.09",
-      "26.00",
-      "7.00"
-    ]
+    "id": "Brumbies.Force",
+    "odds": ["1.12", "26.00", "6.00"]
   },
   {
-    "id": "Chiefs Manawa.Hurricanes Poua",
-    "odds": [
-      "1.04",
-      "31.00",
-      "9.00"
-    ]
+    "id": "Hurricanes.Blues",
+    "odds": ["2.35", "16.00", "1.62"]
   },
   {
-    "id": "Matau.Blues Women",
-    "odds": [
-      "1.62",
-      "18.00",
-      "2.25"
-    ]
+    "id": "Reds.Chiefs",
+    "odds": ["4.20", "21.00", "1.25"]
   },
   {
-    "id": "Fiji.Great Britain",
-    "odds": [
-      "1.09",
-      "21.00",
-      "7.25"
-    ]
+    "id": "Canon Eagles.Shizuoka Blue Revs",
+    "odds": ["1.08", "21.00", "7.50"]
   },
   {
-    "id": "France.Canada",
-    "odds": [
-      "1.05",
-      "26.00",
-      "9.00"
-    ]
+    "id": "Spears Kubota.Toyota Verblitz",
+    "odds": ["1.22", "18.00", "4.40"]
   },
   {
-    "id": "Ireland.South Africa",
-    "odds": [
-      "3.00",
-      "12.00",
-      "1.44"
-    ]
-  },
-  {
-    "id": "Argentina.Spain",
-    "odds": [
-      "1.005",
-      "41.00",
-      "16.00"
-    ]
-  },
-  {
-    "id": "New Zealand.Australia",
-    "odds": [
-      "1.26",
-      "14.00",
-      "4.00"
-    ]
-  },
-  {
-    "id": "USA.Samoa",
-    "odds": [
-      "1.27",
-      "14.00",
-      "4.00"
-    ]
-  },
-  {
-    "id": "Chiefs.Brumbies",
-    "odds": [
-      "1.35",
-      "18.00",
-      "3.30"
-    ]
-  },
-  {
-    "id": "Hurricanes.Reds",
-    "odds": [
-      "1.30",
-      "21.00",
-      "3.60"
-    ]
-  },
-  {
-    "id": "Toulouse.Castres",
-    "odds": [
-      "1.12",
-      "21.00",
-      "6.00"
-    ]
-  },
-  {
-    "id": "Bayonne.Lyon",
-    "odds": [
-      "1.35",
-      "18.00",
-      "3.20"
-    ]
-  },
-  {
-    "id": "Oyonnax.Montpellier",
-    "odds": [
-      "1.72",
-      "18.00",
-      "2.10"
-    ]
-  },
-  {
-    "id": "Stade Francais.Pau",
-    "odds": [
-      "1.17",
-      "18.00",
-      "5.00"
-    ]
-  },
-  {
-    "id": "Toulon.Perpignan",
-    "odds": [
-      "1.14",
-      "21.00",
-      "5.50"
-    ]
-  },
-  {
-    "id": "Bordeaux.Racing 92",
-    "odds": [
-      "1.27",
-      "18.00",
-      "3.80"
-    ]
-  },
-  {
-    "id": "Kobe Steel.Toyota Verblitz",
-    "odds": [
-      "1.60",
-      "16.00",
-      "2.40"
-    ]
-  },
-  {
-    "id": "Spears Kubota.Mitsubishi Dynaboars",
-    "odds": [
-      "1.02",
-      "26.00",
-      "12.00"
-    ]
-  },
-  {
-    "id": "La Rochelle.Clermont",
-    "odds": [
-      "1.18",
-      "18.00",
-      "4.80"
-    ]
+    "id": "Wild Knights.Toshiba Brave Lupus",
+    "odds": ["1.35", "16.00", "3.30"]
   },
   {
     "id": "Italy.Scotland",
-    "odds": [
-      "5.25",
-      "26.00",
-      "1.16"
-    ]
+    "odds": ["5.00", "21.00", "1.18"]
   },
   {
     "id": "England.Ireland",
-    "odds": [
-      "5.25",
-      "26.00",
-      "1.16"
-    ]
+    "odds": ["5.00", "26.00", "1.17"]
   },
   {
     "id": "Wales.France",
-    "odds": [
-      "3.60",
-      "18.00",
-      "1.33"
-    ]
+    "odds": ["3.20", "18.00", "1.37"]
+  },
+  {
+    "id": "La Rochelle.Stade Francais",
+    "odds": ["1.15", "18.00", "5.50"]
+  },
+  {
+    "id": "Clermont.Oyonnax",
+    "odds": ["1.05", "26.00", "9.00"]
+  },
+  {
+    "id": "Lyon.Castres",
+    "odds": ["1.33", "18.00", "3.40"]
+  },
+  {
+    "id": "Montpellier.Bordeaux",
+    "odds": ["1.30", "16.00", "3.60"]
+  },
+  {
+    "id": "Pau.Bayonne",
+    "odds": ["1.33", "18.00", "3.30"]
+  },
+  {
+    "id": "Perpignan.Toulouse",
+    "odds": ["1.70", "15.00", "2.20"]
+  },
+  {
+    "id": "Racing 92.Toulon",
+    "odds": ["1.40", "15.00", "3.00"]
+  },
+  {
+    "id": "Honda HEAT.Black Rams",
+    "odds": ["7.50", "18.00", "1.09"]
+  },
+  {
+    "id": "Mitsubishi Dynaboars.Kobe Steel",
+    "odds": ["3.60", "16.00", "1.30"]
   }
 ]

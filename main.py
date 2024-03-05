@@ -30,6 +30,7 @@ def get_arbs():
         df[f'{name}_team2'] = team2 
 
     best_odds = find_best_odds(df).copy()
+    best_odds.dropna(inplace=True)
     best_odds['%_profit'] = best_odds.apply(lambda row: arbitrage(row), axis=1)
     
     mask = best_odds['%_profit'] != 0
@@ -39,12 +40,12 @@ def get_arbs():
     best_odds['best_team1_odds'] = best_odds['best_team1_odds'].astype(float)
     best_odds['best_team2_odds'] = best_odds['best_team2_odds'].astype(float)
 
-    return best_odds
+    return best_odds.sort_values(by='%_profit', ascending=False)
 
 #!!!!RUN ALL SCRIPTS AND DELETE PREVIOUS DATA!!!!
 # paths = get_file_paths('scripts/rugby_union')
 # clean_path('data/rugby_union')
 # run_js_scripts(paths)
 
-print(get_arbs())
+# print(get_arbs())
 

@@ -1,3 +1,5 @@
+import time
+
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -6,6 +8,7 @@ from library import *
 from main import *
 
 
+# Display elements for a single row in the arbitrage dataframe
 def stl_card(row, row_num):
     odds_total = float(row['best_team1_odds']) + float(row['best_team2_odds'])
     teams = row['match'].split('.')
@@ -27,13 +30,15 @@ def stl_card(row, row_num):
         option = st.selectbox('Real bet options', real_bet_options, key=f"opt{row_num}")
     with col2:
         if stake:
-            st.subheader(f"Profit: $:green[{round(stake * row['%_profit']/100,2)}]")
+            st.subheader(f"Avg Profit: $:green[{round(stake * row['%_profit']/100,2)}]")
         else:
-            st.subheader(f"Profit: $:green[{0.0}]")
+            st.subheader(f"Avg Profit: $:green[{0.0}]")
         st.write("")
-        st.subheader(f"Real returns: \$:green[{max(option)* min([row['best_team1_odds'], row['best_team2_odds']])}]  \$:green[{min(option)* max([row['best_team1_odds'], row['best_team2_odds']])}]")
-                    #   $:green[{max(option)* min([row['team1_implied_odds'], row['team2_implied_odds']])}] 
-                    #   $:green[{min(option)* max([row['team1_implied_odds'], row['team2_implied_odds']])}]")
+        st.subheader(f"Real Stake: ${colour}[{option[0] + option[1]}.00]")
+        # real_return1 = max(option)* min([row['best_team1_odds'], row['best_team2_odds']])
+        # real_return2 = min(option)* max([row['best_team1_odds'], row['best_team2_odds']])
+        # st.subheader(f"Real returns: \$:green[{round(real_return1, 2)}]  \$:green[{round(real_return2, 2)}]")
+    
 
     # arbitrage opportunity info
     first, second, third, forth = st.columns([1, 1, 1, 1])
@@ -50,7 +55,31 @@ def stl_card(row, row_num):
         st.write(s2)
     with forth:
         if stake:
-            st.write(float(stake) * float(row['best_team2_odds']) / odds_total)
-            st.write(float(stake) * float(row['best_team1_odds']) / odds_total)
+            st.write(round(float(option[0]) * row['best_team1_odds'], 2))
+            st.write(round(float(option[1]) * row['best_team2_odds'], 2))
     #divider
     st.markdown("---")
+
+def progress_bar(path):
+
+    cmd = ['python', path]
+
+    # Start the process
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    progress_text = "Operation in progress. Please wait."
+    my_bar = st.progress(0, text=progress_text)
+
+    while True:
+        # Read one line of output
+        line = process.stdout.readline()
+        if not line:
+            break  # No more output
+        # Decode line (from bytes to string) and process it
+        progress = line.decode('utf-8').strip()
+        if progress.isdigit():
+            my_bar.progress(max(0, int(progress) - 5), text=progress_text)
+
+    # Wait for the process to finish and get the exit code
+    process.wait()
+    my_bar.empty()
+

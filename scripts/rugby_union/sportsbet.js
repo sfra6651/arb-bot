@@ -1,5 +1,6 @@
 const fs = require("fs");
 const puppeteer = require("puppeteer");
+require("dotenv").config();
 
 async function rodds(card) {
   //   console.log(card);
@@ -20,6 +21,7 @@ async function rodds(card) {
 (async () => {
   const browser = await puppeteer.launch({
     headless: true,
+    args: [process.env.PROXY_ARG],
   });
 
   const page = await browser.newPage();
@@ -27,6 +29,11 @@ async function rodds(card) {
     "User-Agent":
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
   };
+
+  await page.authenticate({
+    username: process.env.PROXY_USER,
+    password: process.env.PROXY_PASS,
+  });
   await page.setExtraHTTPHeaders(headers);
   await page.goto("https://www.sportsbet.com.au/betting/rugby-union", {
     // waitUntil: "networkidle0",
@@ -62,7 +69,7 @@ async function rodds(card) {
       console.error("An error occurred:", err);
       return;
     }
-    console.log("JSON file has been saved with the array of objects.");
+    console.log("JSON file saved");
   });
 
   await browser.close();

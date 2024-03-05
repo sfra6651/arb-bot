@@ -6,24 +6,6 @@ import numpy as np
 import pandas as pd
 
 
-def run_js_scripts(file_paths):
-    processes = []
-    for path in file_paths:
-        # Form the command to execute 'node' with the file path
-        command = ['node', path]
-        
-        # Spawn a new process for each command
-        process = subprocess.Popen(command)
-        
-        # Append the process to the list of processes
-        processes.append(process)
-
-    # Wait for all processes to complete
-    for process in processes:
-        process.wait()
-    print("All processes have completed.")
-    return 0
-
 #get all filepaths from a directory, used to get names of node scripts to run
 def get_file_paths(directory_path):
     file_paths = []
@@ -103,7 +85,7 @@ def implied_odds(row):
 #start at 5,5 then incement the value at the index of the smallest implied probability - Switch to incrementing the other
 # when the ration of this value to the total is greater than the implied prob of likely outcome
 def real_bets(implied_probs, odds, max_stake):
-    # get the max idex of the max prob for the algo later on
+    # get the index of the min and max prob for the algo later on
     if implied_probs[0] > implied_probs[1]:
         max_index = 0
         min_index = 1

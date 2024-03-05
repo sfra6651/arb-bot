@@ -4,7 +4,6 @@ const puppeteer = require("puppeteer");
 require("dotenv").config();
 
 async function rodds(row) {
-  //   console.log(card);
   try {
     const odds = [];
     const odd_handles = await row.$$('[data-test="outcome"]');
@@ -26,7 +25,9 @@ async function rodds(row) {
   }
 }
 
+//Main function. needs to be wrapped in a async call
 (async () => {
+  //Initilaze scraper object
   const browser = await puppeteer.launch({
     headless: true,
     args: [process.env.PROXY_ARG],
@@ -42,6 +43,8 @@ async function rodds(row) {
     password: process.env.PROXY_PASS,
   });
   await page.setExtraHTTPHeaders(headers);
+
+  // Got to page and start scraping
   await page.goto("https://tonybet.com/nz/prematch", {
     // waitUntil: "networkidle0",
   });
@@ -72,9 +75,7 @@ async function rodds(row) {
     }
   }
 
-  //   await new Promise((resolve) => setTimeout(resolve, 2000));
-  //   await page.screenshot({ path: `sprotsbet.png` });
-
+  // Save the data to json file
   const jsonString = JSON.stringify(data, null, 2);
   fs.writeFile("data/rugby_union/tonybet.json", jsonString, (err) => {
     if (err) {
