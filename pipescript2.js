@@ -1,4 +1,4 @@
-steps = 5;
+steps = 2;
 // Example steps in your JavaScript script
 for (let step = 1; step <= steps; step++) {
   // Simulate some work

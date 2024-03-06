@@ -52,7 +52,9 @@ async function rodds(row) {
 
   const events = await page.$$(".event-table");
 
-  console.log(events.length);
+  // console.log(events.length);
+  const total = events.length;
+  var count = 0;
 
   var data = [];
 
@@ -68,7 +70,11 @@ async function rodds(row) {
         if (row_data) {
           data.push(row_data);
         }
-      } catch (err) {}
+        count += 1;
+        console.log((count / total) * 100);
+      } catch (err) {
+        console.log(err);
+      }
     }
   }
 
@@ -81,7 +87,7 @@ async function rodds(row) {
       console.error("An error occurred:", err);
       return;
     }
-    console.log("JSON file has been saved with the array of objects.");
+    console.log("JSON file saved");
   });
 
   await browser.close();

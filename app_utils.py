@@ -5,7 +5,6 @@ import pandas as pd
 import streamlit as st
 
 from library import *
-from main import *
 
 
 # Display elements for a single row in the arbitrage dataframe
@@ -33,11 +32,9 @@ def stl_card(row, row_num):
             st.subheader(f"Avg Profit: $:green[{round(stake * row['%_profit']/100,2)}]")
         else:
             st.subheader(f"Avg Profit: $:green[{0.0}]")
-        st.write("")
-        st.subheader(f"Real Stake: ${colour}[{option[0] + option[1]}.00]")
-        # real_return1 = max(option)* min([row['best_team1_odds'], row['best_team2_odds']])
-        # real_return2 = min(option)* max([row['best_team1_odds'], row['best_team2_odds']])
-        # st.subheader(f"Real returns: \$:green[{round(real_return1, 2)}]  \$:green[{round(real_return2, 2)}]")
+        if option:
+            st.write("")
+            st.subheader(f"Real Stake: ${colour}[{option[0] + option[1]}.00]")
     
 
     # arbitrage opportunity info
@@ -54,19 +51,19 @@ def stl_card(row, row_num):
         st.write(s1)
         st.write(s2)
     with forth:
-        if stake:
+        if option:
             st.write(round(float(option[0]) * row['best_team1_odds'], 2))
             st.write(round(float(option[1]) * row['best_team2_odds'], 2))
     #divider
     st.markdown("---")
 
-def progress_bar(path):
+def scrape_data(path, arg):
 
-    cmd = ['python', path]
+    cmd = ['python', path, arg]
 
     # Start the process
     process = subprocess.Popen(cmd, stdout=subprocess.PIPE)
-    progress_text = "Operation in progress. Please wait."
+    progress_text = "Fetching data..."
     my_bar = st.progress(0, text=progress_text)
 
     while True:

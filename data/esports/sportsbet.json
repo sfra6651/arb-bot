@@ -1,0 +1,402 @@
+[
+  {
+    "id": "Argentina (Palas).Draw",
+    "odds": [
+      "1.99",
+      "4.50",
+      "2.50"
+    ]
+  },
+  {
+    "id": "Atletico Madrid (Ivan).Draw",
+    "odds": [
+      "1.95",
+      "5.30",
+      "2.40"
+    ]
+  },
+  {
+    "id": "Atletico Madrid (Val).Draw",
+    "odds": [
+      "2.50",
+      "5.90",
+      "1.84"
+    ]
+  },
+  {
+    "id": "FC Copenhagen (Tongpo).Draw",
+    "odds": [
+      "2.20",
+      "5.30",
+      "2.10"
+    ]
+  },
+  {
+    "id": "France (Noah).Draw",
+    "odds": [
+      "2.18",
+      "5.20",
+      "2.15"
+    ]
+  },
+  {
+    "id": "Real Madrid (Spex).Draw",
+    "odds": [
+      "1.74",
+      "4.30",
+      "3.20"
+    ]
+  },
+  {
+    "id": "Argentina (Palas).Draw",
+    "odds": [
+      "1.82",
+      "5.60",
+      "2.55"
+    ]
+  },
+  {
+    "id": "Arsenal FC (Alpha).Draw",
+    "odds": [
+      "1.96",
+      "5.60",
+      "2.30"
+    ]
+  },
+  {
+    "id": "Atletico Madrid (Ivan).Draw",
+    "odds": [
+      "2.15",
+      "5.60",
+      "2.10"
+    ]
+  },
+  {
+    "id": "Atletico Madrid (Val).Draw",
+    "odds": [
+      "3.20",
+      "4.50",
+      "1.71"
+    ]
+  },
+  {
+    "id": "FC Barcelona (Carnage).Draw",
+    "odds": [
+      "2.03",
+      "5.30",
+      "2.25"
+    ]
+  },
+  {
+    "id": "France (Noah).Draw",
+    "odds": [
+      "1.90",
+      "5.00",
+      "2.50"
+    ]
+  },
+  {
+    "id": "Manchester City FC (Juan).Draw",
+    "odds": [
+      "2.50",
+      "5.50",
+      "1.88"
+    ]
+  },
+  {
+    "id": "RB Leipzig (Professor).Draw",
+    "odds": [
+      "2.15",
+      "5.90",
+      "2.08"
+    ]
+  },
+  {
+    "id": "Bleed Esports.Fnatic",
+    "odds": [
+      "2.20",
+      0,
+      "1.64"
+    ]
+  },
+  {
+    "id": "Diamant Esports.Zero Tenacity",
+    "odds": [
+      "1.34",
+      0,
+      "3.06"
+    ]
+  },
+  {
+    "id": "INGLORIOUS.Enterprise",
+    "odds": [
+      "3.69",
+      0,
+      "1.25"
+    ]
+  },
+  {
+    "id": "Unity Esports.Fraggerz",
+    "odds": [
+      "1.42",
+      0,
+      "2.72"
+    ]
+  },
+  {
+    "id": "Gaimin Gladiators.OG",
+    "odds": [
+      "1.63",
+      0,
+      "2.19"
+    ]
+  },
+  {
+    "id": "Heroic.Ninjas in Pyjamas",
+    "odds": [
+      "1.14",
+      0,
+      "5.20"
+    ]
+  },
+  {
+    "id": "BK ROG Esports.Team BDS Academy",
+    "odds": [
+      "2.30",
+      0,
+      "1.57"
+    ]
+  },
+  {
+    "id": "MOUZ NXT.NNO Prime",
+    "odds": [
+      "6.50",
+      0,
+      "1.08"
+    ]
+  },
+  {
+    "id": "Rebels Gaming.Guasones Team",
+    "odds": [
+      "1.85",
+      0,
+      "1.95"
+    ]
+  },
+  {
+    "id": "FC Schalke 04.E WIE EINFACH E-SPORTS",
+    "odds": [
+      "1.85",
+      0,
+      "1.95"
+    ]
+  },
+  {
+    "id": "Nativz.Lionscreed",
+    "odds": [
+      "3.45",
+      0,
+      "1.28"
+    ]
+  },
+  {
+    "id": "Vitality.Bee.Gentle Mates",
+    "odds": [
+      "1.95",
+      0,
+      "1.85"
+    ]
+  },
+  {
+    "id": "ZETA Gaming.UCAM Esports",
+    "odds": [
+      "4.25",
+      0,
+      "1.20"
+    ]
+  },
+  {
+    "id": "B8 Esports.Enterprise Esports",
+    "odds": [
+      "1.48",
+      0,
+      "2.53"
+    ]
+  },
+  {
+    "id": "9 Pandas.KOI",
+    "odds": [
+      "1.90",
+      0,
+      "1.90"
+    ]
+  },
+  {
+    "id": "9INE.Eyeballers",
+    "odds": [
+      "2.53",
+      0,
+      "1.48"
+    ]
+  },
+  {
+    "id": "All Knights.Nottingham Miedo",
+    "odds": [
+      "1.82",
+      0,
+      "1.98"
+    ]
+  },
+  {
+    "id": "Austrian Force willhaben.Eintracht Spandau",
+    "odds": [
+      "1.64",
+      0,
+      "2.20"
+    ]
+  },
+  {
+    "id": "brazylijski luz.Alternate aTTaX",
+    "odds": [
+      "2.74",
+      0,
+      "1.42"
+    ]
+  },
+  {
+    "id": "Heretics Academy.Barca eSports",
+    "odds": [
+      "1.20",
+      0,
+      "4.25"
+    ]
+  },
+  {
+    "id": "Lupus Esports.SPIKE Syndicate",
+    "odds": [
+      "1.76",
+      0,
+      "2.05"
+    ]
+  },
+  {
+    "id": "Ruddy Esports.DMG Esports",
+    "odds": [
+      "1.17",
+      0,
+      "4.65"
+    ]
+  },
+  {
+    "id": "Sangal.TSM",
+    "odds": [
+      "2.08",
+      0,
+      "1.75"
+    ]
+  },
+  {
+    "id": "Team Du Sud.Aegis",
+    "odds": [
+      "1.48",
+      0,
+      "2.54"
+    ]
+  },
+  {
+    "id": "Falcons.Metizport",
+    "odds": [
+      "1.25",
+      0,
+      "3.69"
+    ]
+  },
+  {
+    "id": "BeFive.Ankora Gaming",
+    "odds": [
+      "1.38",
+      0,
+      "2.91"
+    ]
+  },
+  {
+    "id": "Case Esports.Ramboot Club",
+    "odds": [
+      "1.76",
+      0,
+      "2.05"
+    ]
+  },
+  {
+    "id": "CO-OP.XLD Gaming",
+    "odds": [
+      "2.74",
+      0,
+      "1.42"
+    ]
+  },
+  {
+    "id": "NORD Esports.Lundqvist Lightside",
+    "odds": [
+      "1.52",
+      0,
+      "2.42"
+    ]
+  },
+  {
+    "id": "SK Gaming Prime.BIG",
+    "odds": [
+      "1.20",
+      0,
+      "4.25"
+    ]
+  },
+  {
+    "id": "Team GO.Karmine Corp Academy",
+    "odds": [
+      "2.05",
+      0,
+      "1.76"
+    ]
+  },
+  {
+    "id": "Shopify Rebellion.Xtreme Gaming",
+    "odds": [
+      "2.81",
+      0,
+      "1.40"
+    ]
+  },
+  {
+    "id": "Diamant Esports.Crvena Zvezda",
+    "odds": [
+      "1.54",
+      0,
+      "2.37"
+    ]
+  },
+  {
+    "id": "GameWard.Solary",
+    "odds": [
+      "1.95",
+      0,
+      "1.85"
+    ]
+  },
+  {
+    "id": "Movistar KOI.GIANTX Pride",
+    "odds": [
+      "1.56",
+      0,
+      "2.32"
+    ]
+  },
+  {
+    "id": "Unicorns Of Love Sexy Edition.EINTRACHT FRANKFURT",
+    "odds": [
+      "1.38",
+      0,
+      "2.91"
+    ]
+  }
+]

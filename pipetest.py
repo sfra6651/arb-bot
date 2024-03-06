@@ -34,9 +34,12 @@ if __name__ == '__main__':
     with Manager() as manager:
         shared_data = manager.dict()
         processes = []
-        # paths = get_file_paths('scripts/rugby_union')
+        # if len(sys.argv) > 1:
+        #     arg1 = sys.argv[1]
+        # else:
+        #     raise "need to pass an argument to run the scraping process. this argument is the name of the event type"
+        # paths = get_file_paths(f'scripts/{arg1}')
         paths = ['pipescript1.js', 'pipescript2.js', 'pipescript3.js']
-        num_processes = 3
 
         totat_progress = 100 * len(paths)
 
@@ -61,9 +64,9 @@ if __name__ == '__main__':
                     prog += 100
                 else:
                     prog += int(progress)
-            #     print(f"Process {process_id}: {progress}")
+            #the calling proccess can consume this to track progress
             print(f"{int(prog/totat_progress * 100)}")
-            #without this the process that calls this is buffered and not printed to the end. No idea why i need it here adn not above
+            #without this output is buffered and not consumed until the end. No idea why i need it here adn not above
             sys.stdout.flush()
 
         # Wait for all processes to finish

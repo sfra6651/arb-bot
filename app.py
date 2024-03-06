@@ -6,7 +6,6 @@ import streamlit as st
 
 from app_utils import *
 from library import *
-from main import *
 
 
 def temp_results():
@@ -14,41 +13,45 @@ def temp_results():
     duplicated_df = pd.concat([df, df], ignore_index=True)
     duplicated_df = pd.concat([duplicated_df, duplicated_df], ignore_index=True)
     return duplicated_df
+def temp_results2():
+    return get_arbs()
 
 if __name__ == '__main__':
 
     st.set_page_config(layout="wide")
-
-    if "show_arbs" not in st.session_state:
-        st.session_state.show_arbs = False
+    
+    # st.session_state.data_loaded = {"rugby_union":True, "esports":True} #uncomment to turn of scraping the data
 
     if "data_loaded" not in st.session_state:
-        st.session_state.data_loaded = False
+        st.session_state.data_loaded = {"rugby_union":False, "esports":False}
 
     left_margin, main_content, right_margin = st.columns([1, 4, 1])
 
     with main_content:
         st.title("Arbitrage finder")
-        event_type = st.selectbox('Event type', ["rugby union", "esports"], placeholder="Choose an event type...", index=None)
+        event_type = st.selectbox('Event type', ["rugby_union", "esports"], placeholder="Choose an event type...", index=None)
 
-        if event_type and not st.session_state.data_loaded:
-            progress_bar("pipetest.py")
-            st.session_state.data_loaded = True
+        #test if we need to run the scraping scripts. Default behavour will be to run them once every session when we select an event
+        if event_type and not st.session_state.data_loaded.get(event_type):
 
-        if st.session_state.data_loaded:
-            if st.button('Show Arbitrage opportunities'):
-                    st.session_state.show_arbs = True
+            scrape_data("pipetest.py", "")
+            st.session_state.data_loaded[event_type] = True
 
-    if st.session_state.show_arbs and st.session_state.data_loaded:
-        with main_content:
+    #only render if event_type selceted
+    if event_type:
+        #only reder if data is loaded for event type
+        if st.session_state.data_loaded[event_type]:
+            with main_content:
 
-            if "results" not in st.session_state:
-                st.session_state.results = temp_results()
+                #check wether or not we have already done the arbs calculation this session
+                if "results" not in st.session_state:
+                    st.session_state.results = {event_type: get_arbs(event_type)}
+                if event_type not in st.session_state.results:
+                    st.session_state.results[event_type] = get_arbs(event_type)
 
-            row_num = 0
-
-            st.write(get_arbs())
-            for _, row in st.session_state.results.iterrows():
-                stl_card(row, row_num)
-                row_num += 1
+                #finaly render a list of cards for the event type
+                row_num = 0
+                for _, row in st.session_state.results[event_type].iterrows():
+                    stl_card(row, row_num)
+                    row_num += 1
 

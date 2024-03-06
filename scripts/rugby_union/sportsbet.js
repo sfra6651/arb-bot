@@ -58,6 +58,7 @@ async function rodds(card) {
       id: `${odds[i].team}.${odds[i + 2].team}`,
       odds: [odds[i].odds, odds[i + 1].odds, odds[i + 2].odds],
     });
+    console.log((i / odds.length) * 100);
   }
 
   //   await new Promise((resolve) => setTimeout(resolve, 2000));

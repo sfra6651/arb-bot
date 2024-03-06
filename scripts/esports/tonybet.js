@@ -45,7 +45,7 @@ async function rodds(row) {
   await page.setExtraHTTPHeaders(headers);
 
   // Got to page and start scraping
-  await page.goto("https://tonybet.com/nz/prematch", {
+  await page.goto("https://tonybet.com/nz/live/counter-strike", {
     // waitUntil: "networkidle0",
   });
 
@@ -55,8 +55,8 @@ async function rodds(row) {
 
   const events = await page.$$(".event-table");
 
-  console.log(events.length);
-
+  const len = events.length;
+  var count = 0;
   var data = [];
 
   for (const event of events) {
@@ -69,15 +69,19 @@ async function rodds(row) {
         const row_data = await rodds(row);
         // console.log(row_data);
         if (row_data) {
+          // add in a placeholder"draw" odd to conform with other data shape
+          row_data.odds.splice(1, 0, 0.0);
           data.push(row_data);
         }
+        count += 1;
+        console.log(int((count / len) * 100));
       } catch (err) {}
     }
   }
 
   // Save the data to json file
   const jsonString = JSON.stringify(data, null, 2);
-  fs.writeFile("data/rugby_union/tonybet.json", jsonString, (err) => {
+  fs.writeFile("data/esports/tonybet.json", jsonString, (err) => {
     if (err) {
       console.error("An error occurred:", err);
       return;

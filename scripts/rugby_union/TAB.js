@@ -55,10 +55,15 @@ async function rugby_odds(element) {
 
   var rugbyOdds = [];
 
+  const total = data.length;
+  var count = 0;
+
   for (const element of data) {
     try {
       const json = await rugby_odds(element);
       rugbyOdds.push(json);
+      count += 1;
+      console.log((count / total) * 100);
     } catch (err) {
       continue;
     }

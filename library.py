@@ -71,6 +71,7 @@ def get_names(data):
     for d in data:
         match_names = [x['id'] for x in d]
         names.extend(match_names)
+    names = list(map(lambda x: x.lower(), names))
     return np.unique(names)
 
 
@@ -111,9 +112,54 @@ def real_bets(implied_probs, odds, max_stake):
             stakes[min_index] += 5
         else:
             stakes[max_index] += 5
+
     
+    indices_to_remove = []
     #flip the inner arrays so they match up with odds order
     for i, s in enumerate(winning_stakes):
-        winning_stakes[i] = s[::-1]
+        #filter out the lower ones but make sure there is atleast 1
+        if sum(winning_stakes[i]) < int(max_stake * 0.9) and len(winning_stakes) - len(indices_to_remove) > 5:
+            indices_to_remove.append(i)
+        else:
+            winning_stakes[i] = s[::-1]
+    
+    filtered_list = [item for idx, item in enumerate(winning_stakes) if idx not in indices_to_remove]
 
-    return winning_stakes
+    return filtered_list
+
+def get_arbs(event):
+    bookie_names = []
+    #data is an array of json loaded from each file
+    data = []
+    filepaths = get_file_paths(f'data/{event}')
+
+    for path in filepaths:
+        data.append(open_data(path))
+        bookie_names.append(path.split('/')[-1].split('.')[0])
+        
+    match_names = get_names(data)
+
+    df = pd.DataFrame({'match': match_names})
+
+    for d, name in zip(data, bookie_names):
+        team1_dict = {x['id'].lower(): x['odds'][0] for x in d if len(x['odds']) > 2}
+        team2_dict = {x['id'].lower(): x['odds'][2] for x in d if len(x['odds']) > 2}
+
+        team1 = [team1_dict.get(match) for match in match_names]
+        team2 = [team2_dict.get(match) for match in match_names]
+
+        df[f'{name}_team1'] = team1
+        df[f'{name}_team2'] = team2 
+
+    best_odds = find_best_odds(df).copy()
+    best_odds.dropna(inplace=True)
+    best_odds['%_profit'] = best_odds.apply(lambda row: arbitrage(row), axis=1)
+    
+    mask = best_odds['%_profit'] != 0
+    best_odds = best_odds[mask]
+    best_odds[['team1_implied_odds', 'team2_implied_odds']] = best_odds.apply(lambda row: implied_odds(row), axis=1, result_type='expand')
+
+    best_odds['best_team1_odds'] = best_odds['best_team1_odds'].astype(float)
+    best_odds['best_team2_odds'] = best_odds['best_team2_odds'].astype(float)
+
+    return best_odds.sort_values(by='%_profit', ascending=False)

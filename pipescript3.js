@@ -1,5 +1,5 @@
 // Example steps in your JavaScript script
-steps = 5;
+steps = 2;
 for (let step = 1; step <= steps; step++) {
   // Simulate some work
   console.log((step / steps) * 100); // This will be written to stdout
