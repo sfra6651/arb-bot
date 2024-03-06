@@ -127,6 +127,7 @@ def real_bets(implied_probs, odds, max_stake):
 
     return filtered_list
 
+#from the various json files return a df containing only arbitrage opportunities
 def get_arbs(event):
     bookie_names = []
     #data is an array of json loaded from each file
